@@ -1,0 +1,58 @@
+body nav {
+  background-color: #f0f062;
+  font-size: 30px;
+}
+
+body nav .container-fluid .login {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+body nav .navbar-brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+body nav .logo-text {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav li a {
+  color: #3b3b3b;
+  margin-left: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+body .carousel-item {
+  height: 120vh;
+}
+
+body .about-us .icon-title {
+  color: #a1a101;
+}
+
+body .about-us .section-title {
+  color: #a1a101;
+}
+
+body hr {
+  color: #a1a101;
+}
+/*# sourceMappingURL=custom-css.css.map */

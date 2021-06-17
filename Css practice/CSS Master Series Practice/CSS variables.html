@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>Variables</title>
+
+
+<!-- CSS Styles -->
+
+<style>	
+
+/*Calling a variable*/
+
+:root{
+/*variable name with Blue value*/
+--bg-color: blue;
+--font-color:white;
+
+}
+div{
+	/*Using CSS variable Process*/
+	background-color: var(--bg-color);
+}
+
+h1{
+	color: var(--font-color);
+}
+
+h2{
+	/*over-riding CSS variable value*/
+	--font-color:red;
+	/*using the same variable but pover-ride value*/
+	color: var(--font-color);
+}
+h3{
+	/*Variable with the store color white value */
+	color: var(--font-color);
+}
+
+
+</style>
+
+<!-- CSS Styles -->
+
+
+</head>
+<body>
+</body>
+	<div> <h1> Abbas Sher	</h1>	</div>
+	<div> <h2> BS Software Engineering	</h2>	</div>
+	<div> <h3> Gunbad Maira Mingora Swat	</h3>	</div>
+
+</html>

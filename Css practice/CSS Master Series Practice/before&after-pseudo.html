@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Practice</title>
+
+    <!-- Styles For the body -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --main-color: #0d698d;
+      }
+
+      .main-div {
+        background-color: var(--main-color);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        color: #fff;
+        position: relative;
+      }
+      h1::before {
+        content: "";
+        position: absolute;
+        width: 30vh;
+        border-bottom: 5px solid #fff;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        width: 30vh;
+        border-bottom: 5px solid #fff;
+        bottom: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media screen and (max-width: 768px) {
+        h1 {
+          text-align: center;
+          padding: 5px 25px;
+        }
+        h1::before {
+          width: 70vh;
+        }
+        h1::after {
+          width: 70vh;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        h1 {
+          text-align: center;
+          padding: 5px 15px;
+        }
+        h1::before {
+          width: 20vh;
+        }
+        h1::after {
+          width: 20vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>CSS Before and after practice</h1>
+    </div>
+  </body>
+</html>

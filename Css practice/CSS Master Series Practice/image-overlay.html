@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Overlay</title>
+
+    <!-- CSS Styles Here -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parent-div {
+        width: 100vw;
+        height: 100vh;
+        background-color: #485460;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* For Complete overlay on the image */
+
+      /* .child-div {
+        position: relative;
+        width: 60vw;
+        height: 60vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("./images/img-1.jpg");
+        background-size: 100% 100%;
+        box-shadow: 0 10px 25px -6px #000;
+      } */
+
+      /* Style For center a button and with absolute position */
+
+      /* button {
+        color: #000;
+        opacity: 0.5;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        padding: 20px;
+        cursor: pointer;
+      } */
+
+      /* Style for overlay a part */
+      .child-div {
+        width: 60vw;
+        height: 60vh;
+        /* In this the to right is used to start the overlay from left to right */
+
+        /* 
+background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5) ,
+        rgba(0,0,0,0.9)
+          ),
+*/
+
+        background-image: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.4) 50%,
+            transparent 50%
+          ),
+          url("./images/img-1.jpg");
+        background-size: 100% 100%;
+        box-shadow: 0 10px 25px -6px #000;
+      }
+
+      /*
+       for mobile screens  iverlay will be on full image 
+       */
+      @media (max-width: 768px) {
+        .child-div {
+          background-image: linear-gradient(
+              rgba(255, 255, 255, 0.5),
+              rgba(0, 0, 0, 0.8)
+            ),
+            url("./images/img-1.jpg");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-div">
+      <div class="child-div">
+        <!-- This butotn is used for example to set something on the center of the over;ay image -->
+
+        <!-- <button>This is a button</button> -->
+      </div>
+    </div>
+  </body>
+</html>

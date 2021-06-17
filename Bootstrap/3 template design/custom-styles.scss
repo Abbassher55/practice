@@ -1,0 +1,15 @@
+$main-color: #222f3e;
+$white: #fff;
+.header {
+  nav {
+    background-color: $main-color;
+    color: #fff;
+    a {
+      color: #fff;
+      font-size: 20px;
+    }
+    .navbar-brand {
+      font-size: 2rem;
+    }
+  }
+}

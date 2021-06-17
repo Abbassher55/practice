@@ -1,0 +1,14 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	}
+
+.css-heading{
+	color: white;
+	background-color: grey;
+	text-align: center;
+}
+#first-pharagraph{
+	background-color: none;
+	color: black;
+}

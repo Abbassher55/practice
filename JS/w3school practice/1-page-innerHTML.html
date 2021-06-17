@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the page</title>
+  </head>
+    <!-- JavaScript Can Change HTML Content -->
+    <!-- Example  start -->
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button
+      type="button"
+      onclick='document.getElementById("demo").innerHTML = "Html change to JS!"'
+    >
+      Click to change the content
+    </button>
+    <!-- Example  End -->
+    <hr />
+
+    <!-- JavaScript Can Change HTML Attribute Values -->
+    <!-- Example Start -->
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+
+    <button
+      onclick="document.getElementById('myImage').src='./img/pic_bulbon.gif'"
+    >
+      Turn on the light
+    </button>
+
+    <img id="myImage" src="./img/pic_bulboff.gif" style="width: 100px" />
+
+    <button
+      onclick="document.getElementById('myImage').src='./img/pic_bulboff.gif'"
+    >
+      Turn off the light
+    </button>
+  <hr/>
+<!-- Example End -->
+
+<!-- JavaScript Can Change HTML Styles (CSS) -->
+    
+<!-- Example Start -->
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo1">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+<!-- Example End -->
+
+<hr>
+
+<!-- JavaScript Can Show HTML Elements -->
+
+<!-- Example Start -->
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+<p id="demo2" style="display:none">Hello JavaScript!</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Me!</button>
+<!-- Example End  -->
+
+<hr>
+<!-- JavaScript Can Hide HTML Elements -->
+
+<!-- Example Start -->
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo-hide">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo-hide').style.display='none'">Click Me!</button>
+
+<!-- Example End -->
+
+<!-- Javascript can delete HTML Elements -->
+<!-- Example End -->
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demos-hide">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.removeChild('demos-hide')"
+>Click Me!</button>
+<!-- Example End -->
+</body>
+</html>

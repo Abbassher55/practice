@@ -1,0 +1,117 @@
+/* Choose a subjects starts*/
+.subpage-hero.hero-section {
+  height: auto;
+}
+
+.chose-subject-wrapper.hero-caption {
+  top: 140px;
+}
+
+.chose-subject-wrapper .regForm {
+  background-color: #000;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects {
+  background-color: white;
+  padding: 45px;
+  width: 95%;
+  /* Choose subject categories and subjects */
+  /*Subjects section*/
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .title-sub {
+  padding: 40px;
+  font-size: 18px;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .categories-bar-second {
+  background-color: #e3e6ea;
+  border-radius: 10px;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn {
+  background-color: none;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn .category-img-placeholder {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-color: #768195;
+  border-radius: 50px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn:hover, .chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn:focus, .chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn.show {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #393d4a;
+  border-bottom: 2px solid #393d4a;
+  border-radius: 0px;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn:hover .category-img-placeholder, .chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn:focus .category-img-placeholder, .chose-subject-wrapper .regForm .choose-subjects .categories-bar-second .category-btn.show .category-img-placeholder {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-color: #393d4a;
+  border-radius: 50px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .subject-section {
+  padding: 45px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .subject-section .row-bordered {
+  border-radius: 10px;
+  border: 1px solid #bbdbef;
+  padding-bottom: 20px;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .subject-section .custom-radio-button {
+  padding: 12px 16px;
+  display: block;
+  position: relative;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .subject-section .custom-radio-button .sharpvission-radio-button:checked + .custom-radio-label {
+  background-color: #768195;
+  color: #ffe26a;
+  border-radius: 5px;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .subject-section .custom-radio-button .sharpvission-radio-button:checked + .custom-radio-label .tick-icon {
+  display: inline-block;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .subject-section .custom-radio-button .custom-radio-label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 59;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 16px;
+  background-color: #fff;
+  color: #768195;
+}
+
+.chose-subject-wrapper .regForm .choose-subjects .subject-section .custom-radio-button .custom-radio-label .tick-icon {
+  display: none;
+  color: #e3e6ea;
+  margin-left: 14px;
+}
+
+/* Choose a subject End*/
+/*# sourceMappingURL=subject.css.map */

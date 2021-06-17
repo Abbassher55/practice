@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box model and alignment</title>
+
+    <!-- Style for the parent div -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent-div {
+        background-color: grey;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* This child will be on top left */
+      .child-div1 {
+        background-color: aquamarine;
+        width: 10vw;
+        height: 10vh;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        color: black;
+        font-size: 1 rem;
+        text-align: center;
+        border: 1px solid black;
+        font-weight: 600;
+        font-size: 1 rem;
+        color: rgb(22, 0, 221);
+        padding: 20px;
+      }
+      /* This child will be on bottom left */
+
+      .child-div2 {
+        position: absolute;
+        top: auto;
+        left: 0px;
+        bottom: 10px;
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(255, 251, 251);
+        background-color: rgb(0, 131, 87);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This child will be on top right */
+
+      .child-div3 {
+        background-color: rgb(219, 255, 15);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(255, 255, 255);
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        font-weight: 600;
+        font-size: 1 rem;
+        color: rgb(6, 30, 109);
+        padding: 20px;
+      }
+      /* This child will be on bottom right */
+
+      .child-div4 {
+        background-color: rgb(10, 4, 61);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(255, 255, 255);
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This child will be on center */
+
+      .child-div5 {
+        background-color: rgb(105, 0, 131);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(243, 243, 243);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on top center  */
+      .child-div6 {
+        position: absolute;
+        top: 10px;
+        background-color: rgb(131, 0, 0);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on bottom center  */
+      .child-div7 {
+        position: absolute;
+        bottom: 10px;
+        background-color: rgb(5, 119, 39);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on left in center from center  */
+      .child-div8 {
+        position: absolute;
+        left: 22vw;
+        background-color: rgb(226, 78, 9);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on right in center from center  */
+      .child-div9 {
+        position: absolute;
+        right: 22vw;
+        background-color: rgb(95, 76, 76);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on left  and vertically center  */
+      .child-div10 {
+        position: absolute;
+        left: 0;
+        background-color: rgb(172, 106, 106);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on right  and vertically center  */
+      .child-div11 {
+        position: absolute;
+        right: 0;
+        background-color: rgb(107, 0, 0);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on left in center from top center  */
+      .child-div12 {
+        position: absolute;
+        left: 22vw;
+        top: 10px;
+        background-color: rgb(56, 34, 23);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on right in center from top center  */
+      .child-div13 {
+        position: absolute;
+        right: 22vw;
+        top: 10px;
+        background-color: rgb(29, 2, 2);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on left in center from Bottom center  */
+      .child-div14 {
+        position: absolute;
+        left: 22vw;
+        bottom: 10px;
+        background-color: rgb(167, 85, 50);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+      /* This div will be on right in center from Bottom center  */
+      .child-div15 {
+        position: absolute;
+        right: 22vw;
+        bottom: 10px;
+        background-color: rgb(108, 13, 185);
+        width: 10vw;
+        height: 10vh;
+        border: 1px solid rgb(200, 255, 0);
+        font-weight: 600;
+        font-size: 1 rem;
+        color: white;
+        padding: 20px;
+      }
+    </style>
+    <!-- Styles For different Box  -->
+  </head>
+  <body>
+    <div class="parent-div">
+      <div class="child-div1">Top Left</div>
+      <div class="child-div2">Bottom Left</div>
+      <div class="child-div3">Top Right</div>
+      <div class="child-div4">Bottom Right</div>
+      <div class="child-div5">Center</div>
+      <div class="child-div6">Top Center</div>
+      <div class="child-div7">Bottom Center</div>
+      <div class="child-div8">Between Left & Center</div>
+      <div class="child-div9">Between Right & Center</div>
+      <div class="child-div10">At left & Vertically Center</div>
+      <div class="child-div11">At Right & Vertically Center</div>
+      <div class="child-div12">Between Top Left & Top Center</div>
+      <div class="child-div13">Between Top Right & Top Center</div>
+      <div class="child-div14">Between Bottom Left & Bottom Center</div>
+      <div class="child-div15">Between Bottom Right & Bottom Center</div>
+    </div>
+  </body>
+</html>

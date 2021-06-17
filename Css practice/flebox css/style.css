@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  font-size: 2rem;
+  text-align: center;
+}
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  padding: 25px;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  background-color: #223131;
+}

@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .flex-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    .flex-item1 {
+      background-color: #89c1d6;
+      width: 300px;
+      height: 100px;
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-property: padding, margin;
+      transition-duration: 0.5s;
+      .equip-exp {
+        display: none;
+      }
+      &:hover {
+        margin: -30px 0px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        height: 150px;
+        @media screen and (max-width: 770px) {
+          margin-bottom: -20px;
+          padding: 0px;
+        }
+        .equip-heading {
+          display: none;
+        }
+        .equip-exp {
+          display: block;
+          font-size: 20px;
+          padding: 20px;
+        }
+      }
+    }
+    .flex-item2 {
+      background-color: #86c27a;
+      width: 300px;
+      height: 100px;
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-property: padding, margin;
+      transition-duration: 0.5s;
+      .ready-exp {
+        display: none;
+      }
+      &:hover {
+        margin: -30px 0px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        height: 150px;
+        @media screen and (max-width: 770px) {
+          margin-bottom: -20px;
+          padding: 0px;
+        }
+        .ready-heading {
+          display: none;
+        }
+        .ready-exp {
+          display: block;
+          font-size: 20px;
+          padding: 20px;
+        }
+      }
+    }
+    .flex-item3 {
+      background-color: #f9e581;
+      width: 300px;
+      height: 100px;
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-property: margin, padding;
+      transition-duration: 0.5s;
+      .dentist-exp {
+        display: none;
+      }
+      &:hover {
+        margin: -30px 0px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        height: 150px;
+        @media screen and (max-width: 770px) {
+          margin-bottom: -20px;
+          padding: 0px;
+        }
+        .dentist-heading {
+          display: none;
+        }
+        .dentist-exp {
+          display: block;
+          font-size: 20px;
+          padding: 20px;
+        }
+      }
+    }
+    .flex-item4 {
+      background-color: #bf8ac6;
+      width: 300px;
+      height: 100px;
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-property: margin, padding;
+      transition-duration: 0.5s;
+      .record-exp {
+        display: none;
+      }
+      &:hover {
+        margin: -30px 0px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        height: 150px;
+        @media screen and (max-width: 770px) {
+          margin-bottom: 2px;
+          padding: 0px;
+        }
+        .record-heading {
+          display: none;
+        }
+        .record-exp {
+          display: block;
+          font-size: 20px;
+          padding: 0px 30px;
+        }
+      }
+    }
+  }
+}

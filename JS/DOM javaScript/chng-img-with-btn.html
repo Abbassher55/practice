@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change pic With button</title>
+
+    <style>
+      #changePic {
+        padding: 10px;
+        border-radius: 10px;
+        color: rgb(47, 47, 53);
+        background-color: rgb(212, 212, 51);
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="myImage" src="./books/12.jpg" />
+    <br />
+    <button id="changePic">Change Pic</button>
+    <script>
+      var btn = document.getElementById("changePic");
+      var image = document.getElementById("myImage");
+      var current_src = image.src;
+      var new_src = "./books/10.jpg";
+      var is_current = true; // We will change this state with the button
+
+      function changePic() {
+        if (is_current) {
+          is_current = false;
+          image.src = new_src;
+        } else {
+          is_current = true;
+          image.src = current_src;
+        }
+      }
+
+      btn.addEventListener("click", changePic);
+    </script>
+  </body>
+</html>

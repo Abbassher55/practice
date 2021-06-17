@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>::Selection Selector</title>
+
+<!-- CSS Styles -->
+<style>
+	/*universally selection changing background using ::selection*/
+	::selection{
+
+		background-color: red;
+		color: white;
+
+	}
+
+	/*Single selection changing background using ::selection*/
+
+	.third-phrg::selection{
+		color: red;
+		background-color: blue;
+	}
+
+	/*using moz for mozilla browser*/
+.third-phrg::-moz-selection { 
+		color: red;
+		background-color: blue;
+}
+</style>
+
+</head>
+<body>
+	<h1>::Selection selector. Pseudo element</h1>
+
+	<p class="first-phrg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, quos cumque mollitia quia distinctio quasi facilis voluptates 
+	eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, </p>
+
+<h1>::Selection selector. Pseudo element</h1>
+	<p class="second-phrg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, quos cumque mollitia quia distinctio quasi facilis voluptates 
+	eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa dolore aliquid, sequi, 
+	doloribus sint placeat at soluta eum maiores quibusdam, </p>
+
+<h1>What is ::Selection selector?</h1>
+	<p class="third-phrg">Using your cursor select this sentence. Notice how as you select the text a background color fills the space? You can change the background color and color of selected text by styling ::selection. Styling this pseudo element is great for matching user-selected text to your sites color scheme. Take note that the double colon is necessary in the syntax for this pseudo element, despite that other pseudo elements accept a single colon. As seen above, you can style ::selection on individual elements. You can also style the entire page by dropping the bare pseudo element in your stylesheet.
+
+<h4>Select upper part to change background into blue and text color into red. while universally the background is red and color is white</h4>
+
+	 </p>
+</body>
+</html>

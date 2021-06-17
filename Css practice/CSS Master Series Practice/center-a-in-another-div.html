@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Center A div inside another Div</title>
+
+
+<style>
+	*{
+		msrgin:0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+
+	.parent_div{
+		width: 100vw;
+		height: 100vh;
+		background-color: #8980b9;
+
+
+		/*For First method*/
+
+		/* position: relative; */
+
+
+
+		/* For Second method */
+
+		/*display: flex;
+		align-items: center;
+		justify-content: center;*/
+
+
+
+		/* For 3rd Method*/
+		display: grid;
+		place-items:center;
+	}
+	.child_div{
+		width: 60vw;
+		height: 60vh;
+		background-color: #1abc9c;
+		
+		/*For First Method*/
+		
+		/*
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		*/
+	}
+</style>
+
+</head>
+<body>
+	<div class="parent_div">
+		<div class="child_div">
+			<h2>Hello world</h2>
+		</div>
+	</div>
+</body>
+</html>

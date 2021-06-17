@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top_section">
+      <button class="back_btn">< Back</button>
+    </div>
+    <div class="section2">
+      <div class="text-contents">
+        <p class="section-heading">
+          THE
+          <span class="ideal"> ideal</span>
+          PROCESS
+        </p>
+        <p class="process">
+          <span class="note">Note !</span> Process varies from project to
+          project
+        </p>
+      </div>
+    </div>
+    <div class="pages">
+      <div class="tab-nav active" data-target="#section1">1</div>
+      <div class="tab-nav" data-target="#section2">2</div>
+      <div class="tab-nav" data-target="#section3">3</div>
+      <div class="tab-nav" data-target="#section4">4</div>
+      <div class="tab-nav" data-target="#section5">5</div>
+      <div class="tab-nav" data-target="#section6">6</div>
+    </div>
+    <section class="target-data sectionNo1">
+      <h3 class="header">Emphasize/Understand the problem/User/Brand</h3>
+      <p class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eum vel
+        fuga, ad reprehenderit ullam quibusdam laborum nostrum nobis quidem
+        ipsam dolore non illum sed quisquam delectus maiores minima quasi.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eum vel
+        fuga, ad reprehenderit ullam quibusdam laborum nostrum nobis quidem
+        ipsam dolore non illum sed quisquam delectus maiores minima quasi.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eum vel
+        fuga, ad reprehenderit ullam quibusdam laborum nostrum nobis quidem
+        ipsam dolore non illum sed quisquam delectus maiores minima quasi.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero eum vel
+        fuga, ad reprehenderit ullam quibusdam laborum nostrum nobis quidem
+        ipsam dolore non illum sed quisquam delectus maiores minima quasi.
+      </p>
+    </section>
+
+    <script>
+      function activateTab(event) {
+        alert(event.target.dataset.target);
+      }
+
+      let tabNav = document.querySelectorAll(".tab-nav");
+
+      tabNav.forEach(function (tab) {
+        tab.addEventListener("click", activateTab);
+      });
+    </script>
+  </body>
+</html>

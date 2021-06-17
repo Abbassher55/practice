@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>After & Before and Using CALC()</title>
+
+    <!-- StylesFor the page -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Grenze Gotisch", cursive;
+      }
+
+      :root {
+        --main-width: 100vw;
+      }
+      h1 {
+        margin: 100px auto;
+        text-align: center;
+        font-size: 5rem;
+      }
+      h1::after {
+        content: "\f099";
+        font-family: "Font Awesome 5 Free";
+        color: rgb(70, 245, 70);
+        display: block;
+        width: calc(var(--main-width) - 90vw);
+        font-size: 3rem;
+        margin: 0px auto;
+        border-bottom: 10px solid rgb(20, 72, 185);
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <h1>Using CSS ::after Pseoudo Element</h1>
+    </div>
+  </body>
+</html>

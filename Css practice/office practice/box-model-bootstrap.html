@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap 5</title>
+    <style>
+      .parent-container {
+        background-color: #1597bb;
+        padding: 30px;
+      }
+      .inner-div1 {
+        width: 30%;
+        height: 30%;
+        background-color: white;
+        border: 2px solid rgb(10, 8, 8);
+        margin: 20px;
+      }
+      .inner-div2 {
+        width: 30%;
+        height: 30%;
+        background-color: white;
+        border: 2px solid rgb(10, 8, 8);
+        margin: 20px;
+      }
+      .inner-div3 {
+        width: 30%;
+        height: 30%;
+        background-color: white;
+        border: 2px solid rgb(10, 8, 8);
+        margin: 20px;
+      }
+      .inner-inner-div {
+        background-color: #1597bb;
+        width: 50%;
+        height: 50%;
+        border: 1px solid white;
+        border-radius: 10px;
+        transform: scale(1);
+      }
+      .column {
+        width: 500px;
+        height: 500px;
+      }
+      .start {
+        background-color: aliceblue;
+        color: blue;
+        outline: none;
+      }
+      .end {
+        background-color: aliceblue;
+        color: red;
+        outline: none;
+      }
+      #Re-appear {
+        background-color: blueviolet;
+        color: white;
+      }
+      #disappear {
+        background-color: rgb(255, 217, 3);
+        color: rgb(153, 10, 10);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid parent-container">
+      <div class="row">
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn start" type="button" id="align-start">
+            Align Start
+          </button>
+          <button class="btn end" type="button" id="align-end">
+            Align End
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column col-4 d-flex flex-column">
+          <div class="inner-div1 d-flex align-items-end justify-content-end">
+            <div class="inner-inner-div" id="div1"></div>
+          </div>
+
+          <div
+            class="inner-div2 d-flex align-items-start justify-content-start"
+          >
+            <div class="inner-inner-div" id="col1-div2"></div>
+          </div>
+
+          <div class="inner-div3 d-flex align-items-start justify-content-end">
+            <div class="inner-inner-div" id="col1-div3"></div>
+          </div>
+        </div>
+
+        <div class="column col-4 d-flex flex-column">
+          <div
+            class="inner-div1 d-flex align-items-center justify-content-center"
+          >
+            <div class="inner-inner-div" id="col2-div1"></div>
+          </div>
+
+          <div class="d-grid gap-2 d-md-block">
+            <h3>Column 1 div 3 btns</h3>
+            <button class="btn start" type="button" id="zoomIn">
+              Zoom In BTN
+            </button>
+            <button class="btn end" type="button" id="zoomOut">
+              Zoom Out BTN
+            </button>
+          </div>
+
+          <div class="inner-div2 d-flex align-items-end justify-content-start">
+            <div class="inner-inner-div"></div>
+          </div>
+
+          <div class="inner-div3 d-flex align-items-end justify-content-end">
+            <div class="inner-inner-div"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-grid gap-2 d-md-block">
+          <h3>Column 1 div 3 btns</h3>
+          <button class="btn start" type="button" id="disappear">
+            Magic Disappear BTN
+          </button>
+          <button class="btn end" type="button" id="Re-appear">
+            Magic Re-appear BTN
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        /**
+         *
+         *
+         *
+         * Window is now loaded
+         *
+         *All of my function will goes here
+         */
+        var start = document.querySelector("#align-start");
+        var end = document.querySelector("#align-end");
+        var target = document.querySelector("#div1");
+
+        //  For 2nd col first div
+        var zoomMe = document.querySelector("#col2-div1");
+
+        //  Zoom Btn Select
+        var zoomBtn = document.querySelector("#zoomIn");
+        var zoomOutBtn = document.querySelector("#zoomOut");
+        //  For Second div  in first column
+        var secondDiv = document.querySelector("#col1-div2");
+        var thirdDiv = document.querySelector("#col1-div3");
+
+        function alignStart() {
+          target.style.alignSelf = "flex-start";
+          target.style.backgroundColor = "blue";
+          target.style.transitionDuration = " 1s";
+        }
+
+        function alignEnd() {
+          target.style.alignSelf = "flex-end";
+          target.style.backgroundColor = "red";
+          target.style.transitionDuration = " 1s";
+        }
+
+        start.addEventListener("click", alignStart);
+        end.addEventListener("click", alignEnd);
+
+        target.addEventListener("mouseover", function () {
+          event.target.style.backgroundColor = "orange";
+          event.target.style.transform = "scale(1.5)";
+        });
+
+        target.addEventListener("mouseleave", function () {
+          event.target.style.backgroundColor = "green";
+          event.target.style.transform = "scale(1)";
+        });
+
+        secondDiv.addEventListener("mouseenter", function () {
+          event.target.style.width = "80%";
+          event.target.style.borderRadius = "0px";
+          event.target.style.backgroundColor = "black";
+          event.target.style.opacity = "0.8";
+          event.target.style.transition = "Width  2s";
+          event.target.style.height = "90%";
+        });
+
+        secondDiv.addEventListener("mouseleave", function () {
+          event.target.style.width = "50%";
+          event.target.style.height = "50%";
+          event.target.style.borderRadius = "10px";
+          event.target.style.backgroundColor = "#1597bb";
+          event.target.style.alignSelf = "flex-start";
+        });
+
+        //  For magic buttons of col1 div3
+        var appear = document.querySelector("#Re-appear");
+        var disappear = document.querySelector("#disappear");
+
+        //  Function for third div col1
+        function disappearDiv() {
+          thirdDiv.style.display = "none";
+        }
+        disappear.addEventListener("click", disappearDiv);
+
+        function appearDiv() {
+          thirdDiv.style.display = "block";
+        }
+        appear.addEventListener("click", appearDiv);
+
+        // Function For zoomIn Btn
+        function zoomIn() {
+          zoomMe.style.transform = "scale(2)";
+          zoomMe.style.transitionDuration = "1s";
+        }
+
+        zoomBtn.addEventListener("click", zoomIn);
+
+        function zoomOut() {
+          zoomMe.style.transform = "scale(1)";
+        }
+
+        zoomOutBtn.addEventListener("click", zoomOut);
+        /**
+         *
+         *
+         *
+         *
+         * Script end
+         */
+      });
+    </script>
+  </body>
+</html>

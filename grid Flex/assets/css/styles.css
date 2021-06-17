@@ -1,0 +1,221 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .flex-container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.container .flex-container .flex-item1 {
+  background-color: #89c1d6;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: padding, margin;
+  transition-property: padding, margin;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container .flex-container .flex-item1 .equip-exp {
+  display: none;
+}
+
+.container .flex-container .flex-item1:hover {
+  margin: -30px 0px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  height: 150px;
+}
+
+@media screen and (max-width: 770px) {
+  .container .flex-container .flex-item1:hover {
+    margin-bottom: -20px;
+    padding: 0px;
+  }
+}
+
+.container .flex-container .flex-item1:hover .equip-heading {
+  display: none;
+}
+
+.container .flex-container .flex-item1:hover .equip-exp {
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.container .flex-container .flex-item2 {
+  background-color: #86c27a;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: padding, margin;
+  transition-property: padding, margin;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container .flex-container .flex-item2 .ready-exp {
+  display: none;
+}
+
+.container .flex-container .flex-item2:hover {
+  margin: -30px 0px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  height: 150px;
+}
+
+@media screen and (max-width: 770px) {
+  .container .flex-container .flex-item2:hover {
+    margin-bottom: -20px;
+    padding: 0px;
+  }
+}
+
+.container .flex-container .flex-item2:hover .ready-heading {
+  display: none;
+}
+
+.container .flex-container .flex-item2:hover .ready-exp {
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.container .flex-container .flex-item3 {
+  background-color: #f9e581;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: margin, padding;
+  transition-property: margin, padding;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container .flex-container .flex-item3 .dentist-exp {
+  display: none;
+}
+
+.container .flex-container .flex-item3:hover {
+  margin: -30px 0px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  height: 150px;
+}
+
+@media screen and (max-width: 770px) {
+  .container .flex-container .flex-item3:hover {
+    margin-bottom: -20px;
+    padding: 0px;
+  }
+}
+
+.container .flex-container .flex-item3:hover .dentist-heading {
+  display: none;
+}
+
+.container .flex-container .flex-item3:hover .dentist-exp {
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.container .flex-container .flex-item4 {
+  background-color: #bf8ac6;
+  width: 300px;
+  height: 100px;
+  color: white;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: margin, padding;
+  transition-property: margin, padding;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container .flex-container .flex-item4 .record-exp {
+  display: none;
+}
+
+.container .flex-container .flex-item4:hover {
+  margin: -30px 0px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  height: 150px;
+}
+
+@media screen and (max-width: 770px) {
+  .container .flex-container .flex-item4:hover {
+    margin-bottom: 2px;
+    padding: 0px;
+  }
+}
+
+.container .flex-container .flex-item4:hover .record-heading {
+  display: none;
+}
+
+.container .flex-container .flex-item4:hover .record-exp {
+  display: block;
+  font-size: 20px;
+  padding: 0px 30px;
+}
+/*# sourceMappingURL=styles.css.map */
